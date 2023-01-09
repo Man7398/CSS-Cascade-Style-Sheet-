@@ -1,0 +1,42 @@
+<p>GET AND POST<br><br>
+    With the get method, the values from the form are added to the end of the URL specified in the action attribute.
+</p>
+<p>With the post method the values are sent in what are known as HTTP headers. If the method attribute is not used, the form data will be sent using the get method.</p>
+
+<!DOCTYPE html>
+<html>
+<style>
+     label {
+    float: center;
+    width: 100px;
+  }
+</style>
+<body>
+
+<h2>Text input fields</h2>
+<form action="http://www.abc.com">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" name="Email" value=""><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30"></textarea><br>
+    <label for="blog">New Blog Post: </label> <br>
+    <textarea id="blog" name="blog" rows="5" cols="30">
+     </textarea><br><br>
+    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+    <label for="newsletter">Subscribe to newsletter</label><br>
+    <input type="submit" value="Submit">
+    <p>Subscribe to us with your username:</p>
+    <input type="text" name="username" />
+    <input type="submit" name="subscribe" value="Subscribe" />
+
+  </form> 
+  
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of text input fields is 20 characters.</p>
+
+</body>
+</html>

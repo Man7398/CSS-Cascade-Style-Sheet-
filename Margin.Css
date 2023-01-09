@@ -1,0 +1,26 @@
+p {
+    border: 1px solid aquamarine;
+    margin: 20px;
+  }
+  Types-
+  margin-top
+  margin-right
+  margin-bottom
+  margin-left
+
+  p {
+    border: 3px solid DarkSlateGrey;
+    margin-right: 15px;
+  }
+
+  div.headline {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #img-one {
+    margin-bottom: 30px;
+  }
+  
+  #img-two {
+    margin-top: 20px;
+  }

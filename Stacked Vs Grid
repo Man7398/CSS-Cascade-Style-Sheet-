@@ -1,0 +1,194 @@
+*{
+  font-family: verdana;
+  margin: 0;
+}
+
+body{
+  background: #eee;
+  color: #333;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* menu base styles */
+
+nav{
+  background: #333;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover{
+  background-color: #555;
+}
+
+/* social menu base styles */
+
+a.tw{
+  background: url(img/tw.png) no-repeat center;
+  background-size: 80%;
+    
+}
+
+a.fb{
+  background: url(img/fb.png) no-repeat center;
+  background-size: 80%;
+}
+
+.social a{
+  text-indent: -10000px;
+  margin: 0 auto;
+}
+
+.social{
+  max-width: 80px;
+  margin: 0 auto; /* do at end */
+}
+
+/* grid vs flex base styles */
+#blocks{
+  margin: 20px; 
+}
+article{
+  background-color: rgb(250, 247, 247);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+article h2{
+  text-align: center;
+  font-size: 20px;
+  margin:10px 0;
+}
+
+/* flex styles */
+
+nav ul.social li{
+  flex: 1 1 0;
+}
+
+nav ul.social{
+  flex: 1 1 0;
+  display: flex;
+}
+
+@media screen and (min-width: 768px){
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  flex: 1 1 0;
+}
+    
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+  
+ul.social{
+  margin: 0;
+}
+
+
+
+    #blocks{
+      display: flex;
+      flex-wrap:wrap ;
+      justify-content: space-between;
+
+    }
+article{
+  flex:8 1 32%;
+  transition: flex-basis 0.2s linear;
+  
+}
+article.stack{
+  flex:0 1 100%;
+}
+} /* end media 768 */
+
+____________________________________________________________________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Net Ninja - CSS Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Store</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="" class="fb">Facebook</a></li>
+          <li><a href="" class="tw">Twitter</a></li>
+        </ul>
+      </nav>
+      <div style="margin:20px;">
+        <span>Layout:</span>
+        <a href="#" class="stack">Stack</a>
+          <a href="#" class="grid">Grid</a>
+      </div>
+    
+      <section id="blocks">
+        <article>
+          <h2>I pity the fool...</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+        <article>
+          <h2>Get to the chopper...</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+        <article>
+          <h2>What's a horse doing on a spaceship...?</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+        <article>
+          <h2>I pity the fool...</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+        <article>
+          <h2>Get to the chopper...</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+        <article>
+          <h2>What's a horse doing on a spaceship...?</h2>
+          <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+        </article>
+      </section>
+      
+    </div>
+    <script>
+      $("a.stack").on("click",function(){
+        $("article").addClass("stack");
+      });
+      $("a.grid").on("click",function(){
+        $("article").removeClass("stack");
+      });
+    </script>
+  </body>
+</html>

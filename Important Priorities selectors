@@ -1,0 +1,19 @@
+
+/* IMPORTANT KEYWORD CSS */
+p{
+    color:aliceblue !important;
+}
+ Last resort to use for changing 
+
+Priorities With Selectors
+
+1) important
+2) Inline
+3) ID
+4) Class
+5) element selector
+6) Universal selector
+
+If 2 selectors are given than the highest priority one will be applied.
+
+IF 2 Class selectors are there than the last one will be applied.

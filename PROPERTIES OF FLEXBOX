@@ -1,0 +1,48 @@
+PROPERTIES OF FLEXBOX 
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+
+Sure, I will provide an explanation of each of the Flexbox properties mentioned in the provided information:
+
+flex-direction: The flex-direction property is used to define the main axis of the flex container, which determines the direction in which the flex items are laid out. It has four possible values:
+
+row: Flex items are laid out horizontally from left to right (default).
+row-reverse: Flex items are laid out horizontally from right to left.
+column: Flex items are laid out vertically from top to bottom.
+column-reverse: Flex items are laid out vertically from bottom to top.
+flex-wrap: The flex-wrap property is used to specify whether the flex items should wrap to a new line if they don't fit in the container's main axis. It has three possible values:
+
+nowrap: Flex items are not wrapped (default behavior).
+wrap: Flex items will wrap to a new line if necessary.
+wrap-reverse: Flex items will wrap to a new line in reverse order if necessary.
+flex-flow: The flex-flow property is a shorthand property that combines flex-direction and flex-wrap into a single declaration. It is used to set both the direction and wrapping behavior of the flex container.
+
+justify-content: The justify-content property is used to align the flex items along the main axis of the flex container. It determines how extra space in the container is distributed. It has five possible values:
+
+flex-start: Flex items are aligned to the start of the container (left for row, top for column).
+flex-end: Flex items are aligned to the end of the container (right for row, bottom for column).
+center: Flex items are centered along the main axis.
+space-between: Flex items are evenly distributed along the main axis, with space between them.
+space-around: Flex items are evenly distributed along the main axis, with space before, between, and after them.
+align-items: The align-items property is used to align the flex items along the cross axis of the flex container. It determines how the items are aligned in the perpendicular direction to the main axis. It has five possible values:
+
+flex-start: Flex items are aligned to the start of the cross axis.
+flex-end: Flex items are aligned to the end of the cross axis.
+center: Flex items are centered along the cross axis.
+baseline: Flex items are aligned based on their baselines.
+stretch: Flex items are stretched to fill the container along the cross axis (default).
+align-content: The align-content property is used to align the flex lines when there is extra space in the cross axis of the flex container. It has six possible values:
+
+flex-start: Lines are packed at the start of the container.
+flex-end: Lines are packed at the end of the container.
+center: Lines are centered in the container.
+space-between: Lines are evenly distributed with space between them.
+space-around: Lines are evenly distributed with space before, between, and after them.
+stretch: Lines are stretched to fill the container (default).
+align-self: The align-self property is used to control the alignment of an individual flex item along the cross axis. It overrides the align-items property for that specific item.

@@ -1,0 +1,168 @@
+
+    /* Navigation Style */
+    .nav a:link{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    text-transform: uppercase;
+    display: inline;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    }
+    .nav a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline;
+        text-decoration: none;
+        padding: 2px;
+        margin: 2px;
+        }
+
+/* Heading Style */
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 30px;
+        margin: 20px;
+        padding: 2px;
+        text-align: center;
+        background-color: rgba(18, 19, 19, 0.719) ;
+        
+    
+}
+/* About Section Style */
+    .center:hover{
+    width: 800px;
+    height: 500px;
+    /* padding-left: 20px; */
+    margin-left: auto;
+    transition: all 1s;
+    }
+
+.center{
+    transform: scale(1.1);
+}
+About{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+}
+.ABOUT{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+/* Heading 2 Styles */
+h2{
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+color: rgb(54, 54, 52)2, 252, 183;
+text-align: center;
+}
+footer{
+font-style:italic;
+text-align: center;
+}
+/* Image Style */
+.center {
+    margin: 4px;
+display: flex;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+justify-content: center;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* BUTTON STYLES */
+.button-content{
+    /* text-align: center; */
+    background-color: rgba(13, 14, 14, 0.363);
+    border-color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: violet;
+    cursor: pointer;
+    padding: 2px;
+    border: none;
+    padding: 15px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    position: absolute;
+    right:570px;
+    }
+/* BUTTON STYLES  Hover*/
+.button-content:hover{
+    background-color: rgb(13, 226, 155);
+    color: black;  
+    margin: auto;
+    width: auto;
+
+}
+/* Product details style */
+ul{
+  margin-top: 70px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+    
+
+}
+/* Link  Style */
+.link{
+    text-align: center;
+
+}
+/* BODY STYLE */
+body{
+    background-color: rgb(78, 78, 76);
+   
+}
+/* Footer Style */
+footer:hover{
+
+    text-decoration: underline  red;
+
+}
+
+/* IMPORTANT KEYWORD CSS */
+p{
+    color:rgb(148, 141, 141) !important;
+}
+/* *{
+margin: 0;
+padding: 0;
+} */
+
+/* PSEUDO ELEMENT  */
+.Para p::first-letter {
+    font-size: 30px;
+  } 
+/* Adjacent Element */
+p+h2{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+    font-size: 30px;
+}
+
+h1::after{
+            content:"TOP";
+            background-color: yellow;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+            position :absolute;
+            top: 22px;
+            right:29px;
+    }
+/* h1::before{
+    content:"BOTTOM";
+    background-color: yellow;
+font-size: 16px;
+font-weight: bold;
+display: 
+} */

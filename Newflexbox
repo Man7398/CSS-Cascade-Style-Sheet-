@@ -1,0 +1,219 @@
+    /*MAIN HEADER  */
+    .main-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: violet;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    margin: 20px;
+    padding: 3px;
+     background-color:rgb(10, 10, 10)
+    }
+
+    
+    /* Navigation Style */
+     .nav a:link{ 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        justify-content:flex-end;
+        gap: 30px;
+        align-items: flex-end;
+        text-decoration: none;
+        padding: 2px;
+       
+        
+    } 
+    .nav{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        justify-content:top;
+        align-items:top;
+        gap: 30px;
+        position: absolute;
+        top: 21px;
+        right: 28px;
+        text-decoration: none;
+        padding: 2px;
+     
+        }
+
+/* Heading Style */
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 30px;
+        margin: 20px;
+        padding: 2px;
+        text-align: center;
+        background-color: rgba(18, 19, 19, 0.719) ;
+        
+    
+}
+
+About{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+}
+.ABOUT{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+/* Heading 2 Styles */
+    h2{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(54, 54, 52)2, 252, 183;
+    text-align: center;
+}
+/* FOOTER STYLE */
+footer{
+    font-style:italic;
+    text-align: center;
+}   
+
+/* Image Style */
+/* .center:hover{
+    width: 800px;
+    height: 500px;
+    /* padding-left: 20px; */
+    /* margin-left: auto;
+    transition: all 1s;
+} */ */
+
+.center {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding-left: 50px;
+    justify-content: flex-start;
+    text-align: flex-start;
+}
+/* 
+.center{
+    transform: scale(1.1);
+} */
+
+/* BUTTON STYLES */
+.button-content{
+
+    /* text-align: center; */
+    background-color: rgba(13, 14, 14, 0.363);
+    border-color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: violet;
+    cursor: pointer;
+    padding: 2px;
+    border: none;
+    padding: 15px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    position: absolute;
+    left:80px;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+  }
+
+/* BUTTON STYLES  Hover*/
+.button-content:hover{
+    background-color: rgb(13, 226, 155);
+    color: black;  
+    /* margin: auto;
+    width: auto; */
+
+
+}
+
+/* Href Tag Shiva */
+a
+{color: rgb(236, 223, 223);}
+
+/* Product details style */
+ul{
+    row-gap: 20px;
+    right: 11px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    top: 350px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/* Link  Style */
+.link{
+    text-align: center;
+  
+
+}
+/* BODY STYLE */
+body{
+    background-color: rgb(78, 78, 76);
+   
+}
+/* Footer Style */
+footer:hover{
+
+    text-decoration: underline  red;
+
+}
+
+/* IMPORTANT KEYWORD CSS */
+p{
+    /* color:rgb(148, 141, 141) !important; */
+    color: white;
+}
+/* *{
+margin: 0;
+padding: 0;
+} */
+
+/* PSEUDO ELEMENT  */
+.Para p::first-letter {
+    font-size: 30px;
+  } 
+/* Adjacent Element */
+p+h2{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+    font-size: 30px;
+}
+
+h1::after{
+            content:"TOP";
+            background-color: yellow;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+            position :absolute;
+            top: 22px;
+            right:29px;
+    }
+/* h1::before{
+    content:"BOTTOM";
+    background-color: yellow;
+font-size: 16px;
+font-weight: bold;
+display: 
+} */
+
+.jara{   display: flexbox;
+    padding-top: 80px;
+    justify-content:center;
+  text-align: center;
+    justify-content: first baseline;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

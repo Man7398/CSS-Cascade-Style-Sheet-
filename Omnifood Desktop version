@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Omnifood</title>
+
+    <!-- ION ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <header class="header">
@@ -166,10 +170,111 @@
            class="step-img" 
            alt="Delivery screen">
       </div>
+    </section>
+
+      <section class="section-meals">
+        <div class="container center-text">
+          <span class="subheading">Meals</span>
+          <h2 class="heading-secondary">Omnifood works with any diet
+            </h2>
+             </div>
+
+             <div class="container grid grid--3-cols margin-bottom-md">
+             <!-- FIRST MEAL CARD -->
+              <div class="meal">
+                <img 
+                src="content/img/meals/meal-1.jpg"
+                class="meal-img"
+                alt="Japanese Gyozas"
+                />
+                <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegetarian">Vegetarian</span>
+                </div>
+                <p class="meal-title">Japanese Gyazas</p> 
+                <ul class="meal-attribute">
+                  <li class="meal-attribute">
+                    <ion-icon name="flame-outline" class="meal-icon"></ion-icon>
+                    <span>650 Calories</span></li>
+                  <li class="meal-attribute"><ion-icon name="nutrition-outline" class="meal-icon"></ion-icon>
+                    <span>Nutriscore &reg;74</span></li>
+                  <li class="meal-attribute"><ion-icon name="star-half-outline" class="meal-icon"></ion-icon>
+                    <span>4.9 rating (537)</span></li>
+                </ul> 
+              </div>
+              </div>
+              <!-- Second Meal Card -->
+              <div class="meal">
+                <img 
+                src="content/img/meals/meal-2.jpg"
+                class="meal-img"
+                alt="Japanese Gyozas"
+                />
+                <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                </div>
+                <p class="meal-title">Avacado Salad</p> 
+                <ul class="meal-attribute">
+                  <li class="meal-attribute">
+                    <ion-icon name="flame-outline" class="meal-icon"></ion-icon>
+                    <span>1000 Calories</span></li>
+                  <li class="meal-attribute"><ion-icon name="nutrition-outline" class="meal-icon"></ion-icon>
+                    <span>Nutriscore &reg;90</span></li>
+                  <li class="meal-attribute"><ion-icon name="star-half-outline" class="meal-icon"></ion-icon>
+                    <span>4.95 rating (5307)</span></li>
+                </ul> 
+              </div>
+              </div>
+              <!-- THird -->
+              <!-- <div class="meal">
+                <img 
+                src="content/img/meals/meal-2.jpg"
+                class="meal-img"
+                alt="Japanese Gyozas"
+                />
+                <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                </div>
+                <p class="meal-title">Fruit Salad</p> 
+                <ul class="meal-attribute">
+                  <li class="meal-attribute">
+                    <ion-icon name="flame-outline" class="meal-icon"></ion-icon>
+                    <span>1000 Calories</span></li>
+                  <li class="meal-attribute"><ion-icon name="nutrition-outline" class="meal-icon"></ion-icon>
+                    <span>Nutriscore &reg;90</span></li>
+                  <li class="meal-attribute"><ion-icon name="star-half-outline" class="meal-icon"></ion-icon>
+                    <span>4.95 rating (5307)</span></li>
+                </ul> 
+              </div>
+              </div> -->
+              <div class="diets">
+                <h3 class="heading-tertiary">Works with any diet</h3>
+                <ul class="list">
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Vegetarian</li>
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Vegan</li>
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Pescatarian</li>
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Gluten-free</li> 
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon> Lactose-free</li> 
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon> Keto</li>
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Paleo</li> 
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Low FODMAP</li>
+                   <li class="list-item"><ion-icon name="checkmark-outline" class="list-icon"></ion-icon>Kid-friendly</li>
+                </ul>
+              </div>
+
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link">See all recipes &rarr;</a>
+        </div>
       </section>
-    </main>
+      </main>
+ 
   </body>
+  
 </html>
+
 **************************************************************************************************************************
 STYLE.CSS
 __________________________________________________
@@ -296,25 +401,24 @@ header {
   color: #cf711f;
 }
 
-
 /* 
 ******************
 Featured in section
 *******************
 */
-.section-featured{
-padding: 4.8rem 0 3.2rem 0;
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
 }
 
-.heading-featured-in{
+.heading-featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  font-weight:500 ;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 2.4rem;
   color: #888;
-} 
+}
 
 .logos {
   display: flex;
@@ -322,7 +426,7 @@ padding: 4.8rem 0 3.2rem 0;
   justify-content: space-around;
 }
 
-.logos img{
+.logos img {
   height: 3.2rem;
   /* filter: grayscale(100%); */
   filter: brightness(0);
@@ -393,6 +497,102 @@ padding: 4.8rem 0 3.2rem 0;
 .step-description {
   font-size: 2rem;
   line-height: 1.8;
+}
+
+/* ****************************
+MEALS SECTION
+*******************************
+*/
+.tag{
+display: inline-block;
+padding: 0.4rem 0.8rem;
+font-size: 1.2rem;
+text-transform: uppercase;
+
+border-radius: 100px;
+color: #333;
+overflow: hidden;
+font-weight: 600;
+}
+
+.tag--vegetarian{
+  background-color: rgb(25, 194, 25);
+}
+.tag--vegan{
+background-color: rgb(9, 143, 9);
+}
+.meal-content{
+  padding: 4.8rem;
+}
+.meal{
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  background-color: #eee7e7;
+  border-radius: 11px;
+ transition: all 0.5s;
+}
+.meal-tags{
+  margin-bottom:1.2rem;
+  gap: 0.4rem;
+}
+
+.meal:hover{
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.05);
+}
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-attribute {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.meal-attribute{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 680;
+  margin-bottom: 3.2rem;
+}
+.meal-icon{
+  width: 100%;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+ flex-direction: column;
+ gap: 1.6rem;
+
+}
+.list-icon{
+  width: 3rem;
+  height: 3rem;
+  color:#e67e22;
+}
+.list-item{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.all-recipes{
+  text-align: center;
+  font-size:1.8rem ;
 }
 
 GENERAL.CSS
@@ -497,7 +697,7 @@ margin-bottom: 3.2rem;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     /* Put transittion on original "state" */
-    transition: background-color 0.5s;
+    transition: all 0.5s;
   }
   
   .btn--full:link,
@@ -526,7 +726,37 @@ margin-bottom: 3.2rem;
     background-color: #fff;
     color: #555;
   }
-  
-  .margin-right-sm{
+   
+    .link:link,
+    .link:visited{
+      display: inline-block;
+      color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  transition: all 0.3s;  
+  }
+
+    .link:hover,
+    .link:active{
+      color: #cf711f;
+    border-bottom: 1px solid transparent;
+
+    }
+
+   /*Helper/Settings classes */
+    
+   .margin-right-sm{
     margin-right: 1.6rem !important;
+    }
+
+    .margin-bottom-md{
+      margin-bottom: 4.8rem !important;
+    }
+
+    .center-text{
+      text-align: center;
+    }
+    strong{
+      font-weight: 580;
     }

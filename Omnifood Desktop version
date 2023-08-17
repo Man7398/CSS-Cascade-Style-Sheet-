@@ -718,6 +718,9 @@ background-color: rgb(9, 143, 9);
 .section-testimonials {
  
   background-color: #020202;
+  display: grid;
+  grid-template-columns: 55fr  45fr ;
+  align-items: center;
 }
 
 .testimonials{
@@ -746,7 +749,9 @@ margin-bottom: 1.6rem;
   font-size: 1.6rem;
   color: #777;
 }
-
+/* ***********************************
+GALLERY SECTION 
+**************************************/
 .gallery {
   display: grid;
   gap: 1.6rem;
@@ -758,6 +763,12 @@ margin-bottom: 1.6rem;
 display: block;
 width: 100%;
 }
+
+.gallery-item img:hover{
+transform:rotate(45deg);
+/* transform: scale(1.1); */
+}
+
 
 
 ______________________________________________________________________________________________________________________________________________________________

@@ -271,7 +271,7 @@
         </div>
       </section>
 <!-- TESTIMONIAL SECTION -->
-      <section class="section-testimonials grid grid--2-cols">
+      <section class="section-testimonials">
         <div class="testimonials-container">
         <section class="section-meals">
             <span class="subheading">Testimonials</span>
@@ -389,6 +389,7 @@
       </main>
   </body>
 </html>
+
 _________________________________________________________________________________________________________________________________________
 
 STYLE.CSS

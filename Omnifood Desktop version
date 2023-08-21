@@ -19,11 +19,13 @@
   </head>
   <body>
     <header class="header">
+      <a href="#">
       <img
         class="logo"
         alt="Omnifood logo"
         src="content/img/omnifood-logo.png"
       />
+    </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Section 1</a></li>
@@ -459,8 +461,83 @@
             </div>
       </section>
       </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container grid grid--5-cols">
+        <div class="logo-col"> 
+          <a href="#" class="footer-logo">
+            <img
+              class="logo-footer"
+              alt="Omnifood logo"
+              src="content/img/omnifood-logo.png"
+            />
+          </a>
+          <!-- SOCIAL MEDIA LINKS -->
+          <ul class="social-links">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+          </ul>
+          <!-- COPYRIGHT -->
+          <p class="copyright">
+            copyright &copy; 2023 by Omnifood Incl.
+            Al l rights reserved!</p>
+        </div>
+                  <!-- 1st Colm -->
+        <div class="nav-col">
+          <p class="footer-heading">Contact Us</p>
+         <address class="footer-nav">  <br>  <br>  <br>
+          <p class="footer-link"> Address: 623 Harrison St.,</p> 
+          <p class="footer-link">Email: hello@omnifood.com</p>
+          <p class="footer-link">2nd Floor, San Francisco, CA 94107</p>
+          <br>  <p class="footer-link"><a href="tel:415-201-6370">TEL:415-201-6370</a>
+          <br> 
+          <a href="mailto:hello@gmail.com">Mail:Hello@omnifood</a>
+          </p>
+        </address>
+        </div>
+        <!--  -->
+        <nav class="nav-col">
+          <p class="footer-heading">Accounts</p>
+          <ul class="footer-nav">
+          <li><a class="footer-link" href="#">create account</a></li>
+          <br>
+          <li><a class="footer-link" href="#">sign in</a></li>
+          <br>
+          <li><a class="footer-link" href="#">Ios app</a></li>
+          <br>
+          <li><a class="footer-link" href="#">Adnroid app</a></li>
+        </ul>
+        </nav>
+        <!--  -->
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About Omnifood</a></li>
+          <br><li><a class="footer-link" href="#">For Business</a></li>
+          <br><li><a class="footer-link" href="#">Cooking partners</a></li>
+          <br><li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+        </nav>
+        <!--  -->
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <br><li><a class="footer-link" href="#">Recipe directory</a></li>
+            <br> <li><a class="footer-link" href="#">Help center</a></li>
+            <br> <li><a class="footer-link" href="#">Privacy & terms</a></li>
+              </ul>
+              </nav>   
+          </div>
+      
+      </footer>
   </body>
 </html>
+
 
 _________________________________________________________________________________________________________________________________________
 
@@ -827,7 +904,7 @@ GALLERY SECTION
  */
 
 .section-pricing {
-  padding: 7.6rem;
+  padding: 5.6rem;
   align-items: center;
 }
 
@@ -884,6 +961,7 @@ h2.heading-secondary {
 section.section-meals {
   text-align: center;
 }
+/* BEST VALUE  */
 .pricing-plan::before {
   content: "BEST VALUE";
   position: absolute;
@@ -897,8 +975,67 @@ section.section-meals {
   color: #0d0e0d;
   border-top-right-radius: 1.6rem;
 }
+/* ***********************************************
+FOOTER
+**************************************************
+ */
 
+ .footer{
+  padding: 9.6rem;
+  background-color: #111111;
+ }
+ .footer-heading{
+font-size: 1.8rem;
+font-weight: 500;
+margin-bottom: 3.2rem;
+margin-bottom:4rem ;
 
+ }
+ .footer nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+gap: 2.4rem;
+ }
+ .footer-link{
+  gap: 2.4rem;
+ }
+ .footer-link:link,
+ .footer-link:visited{
+text-decoration: none;
+font-size: 1.6rem;
+color: #767676;
+transition: all 0.3s;
+
+ }
+
+ .footer-link:hover,
+ .footer-link:active{
+color: #f5f1f1;
+ }
+.contacts{
+gap: 2.4rem;
+text-decoration: none;
+font-size: 1.6rem;
+color: #fcf3f3;
+transition: all 0.3s;
+
+}
+.social-links{
+  padding-top: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  font-size: 2.6rem;
+}
+
+.logo-footer {
+  height: 4.8rem;
+ transition: all .3s;
+ transform: none;
+ overflow: hidden;
+  background-color: white;
+}
 ______________________________________________________________________________________________________________________________________________________________
 GENERAL.CSS
 _______________________________________________________________________________________________________________________________________________________________
@@ -907,186 +1044,197 @@ ________________________________________________________________________________
 font-size:
 */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 10px; */
-  font-size: 62.5%;
-}
-body {
-  font-family: "rubik";
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-/* 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+  }
+  body {
+    font-family: "rubik";
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+  }
+  /* 
   *********************************************
   GENERAL REUSABLE COMPONENT
   *********************************************
    */
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
+   .container{
+    max-width: 120rem;
+    margin:0 auto;
+    padding: 0 3.2rem;
+  }
+  
+  .grid{
+    display: grid;
+    gap:7.6rem;
+    column-gap: 6.4rem;
 
-.grid {
-  display: grid;
-  gap: 7.6rem;
-  column-gap: 6.4rem;
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-.grid-center-v {
-  align-items: center;
-}
-
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
+  }
+  
+  .grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .grid--3-cols{
+   
+    grid-template-columns: repeat(3,1fr);
+  
+  }
+  
+  .grid--4-cols{
+   
+    grid-template-columns: repeat(4,1fr);
+  
+  }
+  .grid--5-cols{
+   
+    grid-template-columns: repeat(5,1fr);
+  }
+  
+  .grid-center-v{
+    align-items: center;
+  }
+  
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary{
   font-weight: 700;
   color: #333;
   color: #555;
   letter-spacing: -0.5px;
-}
-.heading-tertiary {
-  font-size: 3rem;
-  margin-bottom: 3.2rem;
-}
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
-}
-
-.subheading {
-  display: block;
-  font-size: 1.6rem;
+  }
+  .heading-tertiary{
+font-size: 3rem;
+margin-bottom: 3.2rem;
+  }
+  .heading-secondary{
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+  }
+  
+  .subheading{
+    display: block;
+    font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #cf711f;
   margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-}
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  /* Put transittion on original "state" */
-  transition: all 0.5s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-  margin-right: 1.6rem;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-  background-color: red;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-  /* border: 3px solid; it make it jump so to fix this 
+  letter-spacing: 0.75px; 
+  }
+   .heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    /* Put transittion on original "state" */
+    transition: all 0.5s;
+  }
+  
+  .btn--full:link,
+  .btn--full:visited {
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 1.6rem;
+ 
+  }
+  
+  
+  .btn--full:hover,
+  .btn--full:active {
+    background-color: #cf711f;
+    background-color: rgb(255, 145, 0);
+  }
+  
+  .btn--outline:hover,
+  .btn--outline:active {
+    background-color: #fdf2e9;
+    /* border: 3px solid; it make it jump so to fix this 
     we will add box shadow property*/
-  box-shadow: inset 0 0 0 3px #afacac69;
-}
+    box-shadow: inset 0 0 0 3px #afacac69;
+  }
+  
+  .btn--outline:link,
+  .btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+  }
+   
+    .link:link,
+    .link:visited{
+      display: inline-block;
+      color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  transition: all 0.3s;  
+  }
 
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
+    .link:hover,
+    .link:active{
+      color: #cf711f;
+    border-bottom: 1px solid transparent;
 
-.link:link,
-.link:visited {
-  display: inline-block;
-  color: #e67e22;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-  transition: all 0.3s;
-}
+    }
 
-.link:hover,
-.link:active {
-  color: #cf711f;
-  border-bottom: 1px solid transparent;
-}
+   /*Helper/Settings classes */
+    
+   .margin-right-sm{
+    margin-right: 1.6rem !important;
+    }
 
-/*Helper/Settings classes */
+    .margin-bottom-md{
+      margin-bottom: 4.8rem !important;
+    }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
+    .center-text{
+      text-align: center;
+    }
+    strong{
+      font-weight: 580;
+    }
 
-.margin-bottom-md {
-  margin-bottom: 4.8rem !important;
-}
-
-.center-text {
-  text-align: center;
-}
-strong {
-  font-weight: 580;
-}
-
-.list {
-  list-style: none;
-  display: flex;
+      
+  .list{
+    list-style: none;
+    display: flex;
   flex-direction: column;
   gap: 1.6rem;
-}
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
+
+  }
+  .list-icon{
+    width: 3rem;
+    height: 3rem;
+    color:#e67e22;
+  }
+  .list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+    
+  .list-pricing{
+    list-style: none;
+    display: flex;
+  flex-direction: column;
   gap: 1.6rem;
-}
-
-
-.pricing-plan{
-  background-color: #fdf2e9;
-  margin-bottom: 4.8rem;
-  border-radius: 11px;
-  width: 75%;
-text-align: center;
-}
-.plan-sign-up{
-  text-align: center;
-  margin-top: 4.8rem;
-}
+  padding-left: 4.6rem;
+  }
+  

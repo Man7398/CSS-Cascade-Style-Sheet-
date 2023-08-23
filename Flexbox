@@ -1,7 +1,7 @@
 Flexbox:
 We have learned that we can layout our elements on a web page with the help of display and position properties of css as we have seen that in previous module.
 
-Actuall, flexbox or layouting with flexbox, is a tool that greatly simplifies the positioning of our elments on our web page.
+Actually, flexbox or layouting with flexbox, is a tool that greatly simplifies the positioning of our elments on our web page.
 
 There are two important components to a flexbox layout: flex containers and flex items. A flex container is an element on a page that contains flex items. All direct child elements of a flex container are flex items. This distinction is important because some of the properties you will learn in this lesson apply to flex containers while others apply to flex items.
 

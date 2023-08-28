@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Very Important for Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,8 @@
     <!-- ION ICON -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- JAVASCRIPT -->
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -28,17 +31,17 @@
     </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cla" href="#">Section 5</a></li>
+          <li><a class="main-nav-link" href="#how">HOW</a></li>
+          <li><a class="main-nav-link" href="#foodmeals">FOOD</a></li>
+          <li><a class="main-nav-link" href="#pricing">PRICE</a></li>
+          <li><a class="main-nav-link" href="#footer">ABOUT</a></li>
+          <li><a class="main-nav-link nav-cla" href="#home">HOME</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <section class="section-hero">
+        <section class="section-hero" id="home">
           <div class="hero">
             <div class="hero-text-box">
               <h1 class="heading-primary">
@@ -109,12 +112,12 @@
             </div>
           </div>
         </section>
+                  <!-- HOW IT WORKS -->
 
-        <section class="section-how">
+        <section class="section-how" id="how">
           <div class="container">
             <span class="subheading">How it works</span>
-            <h2 class="heading-secondary">Your daily dose of health
-               in 3 simple steps
+            <h2 class="heading-secondary">Get your daily dose of health with these 3 simple steps.
               </h2>
                </div>
 
@@ -174,8 +177,9 @@
       </div>
     </div>
     </section>
+              <!-- MEALS SECTION -->
 
-      <section class="section-meals">
+      <section class="section-meals" id="foodmeals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">Omnifood works with any diet
@@ -272,16 +276,17 @@
           <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
-<!-- TESTIMONIAL SECTION -->
-      <section class="section-testimonials">
+
+                <!-- TESTIMONIAL SECTION -->
+
+      <section class="section-testimonials" id="testimonial">
         <div class="testimonials-container">
         <section class="section-meals">
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">
               Once you try, you can't resist!
               </h2>
-           
-     
+        
         <div class="testimonials">
         <!-- Customer 1 -->
           <figure  class="testimonial">
@@ -324,7 +329,8 @@
 </div>
 
     </div>
-    <!-- GALLERY SECTION -->
+                <!-- GALLERY SECTION -->
+
         <div class="gallery">
         <figure class="gallery-item">
           <img src="content/img/gallery/gallery-1.jpg"
@@ -390,7 +396,7 @@
       </section>
 
       <!-- SECTION OF PRICING  -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container"></div>
       <section class="section-meals"><span class="subheading">PRICING</span></section>
           <h2 class="heading-secondary">
@@ -398,12 +404,14 @@
             </h2>
 
              <div class="container grid grid--2-cols">
+              <!-- CARD 1st -->
               <div class="pricing-plan--starter">
                 <prcicingheader class="plan-header">                          
               <p class="plan-name">Starter</p> 
               <p class="plan-price"><span>$</span>399</p>
             <p class="plan-text">per month</p>
           </prcicingheader> 
+
             <!-- PRICE CARDS ITEM LIST -->
             <ul class="list-pricing">
               <li class="list-item">
@@ -430,11 +438,11 @@
                <div class="pricing-plan">
                 <pricingheader class="plan-header">                               
                 <p class="plan-name">Complete</p> 
-                <p class="plan-price"><span>$</span>499</p>
+                <p class="plan-price--complete"><span>$</span>499</p>
               <p class="plan-text">per month</p>
             </pricingheader>  
                 <!-- PRICE CARDS ITEM LIST -->
-               <ul class="list-pricing">
+               <ul class="list-pricing--complete">
                   <li class="list-item">
                     <ion-icon class="list-icon"
                     name="checkmark-outline"></ion-icon>
@@ -463,7 +471,7 @@
       </main>
 
       <!-- FOOTER -->
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container grid grid--5-cols">
         <div class="logo-col"> 
           <a href="#" class="footer-logo">
@@ -483,24 +491,24 @@
                 </li>
           </ul>
           <!-- COPYRIGHT -->
-          <p class="copyright">
-            copyright &copy; 2023 by Omnifood Incl.
+          <br><p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Omnifood Incl.
             Al l rights reserved!</p>
         </div>
                   <!-- 1st Colm -->
         <div class="nav-col">
           <p class="footer-heading">Contact Us</p>
-         <address class="footer-nav">  <br>  <br>  <br>
-          <p class="footer-link"> Address: 623 Harrison St.,</p> 
-          <p class="footer-link">Email: hello@omnifood.com</p>
-          <p class="footer-link">2nd Floor, San Francisco, CA 94107</p>
-          <br>  <p class="footer-link"><a href="tel:415-201-6370">TEL:415-201-6370</a>
+         <address class="footer-nav">  <br> 
+         <br> <p class="footer-link"> Address: 623 Harrison St.,</p> 
+         <br> <p class="footer-link">Email: hello@omnifood.com</p>
+         <br>   <p class="footer-link">2nd Floor, San Francisco, CA 94107</p>
+          <br><p class="footer-link"><a href="tel:415-201-6370">TEL:415-201-6370</a>
           <br> 
           <a href="mailto:hello@gmail.com">Mail:Hello@omnifood</a>
           </p>
         </address>
         </div>
-        <!--  -->
+        <!-- 2nd coln -->
         <nav class="nav-col">
           <p class="footer-heading">Accounts</p>
           <ul class="footer-nav">
@@ -513,7 +521,7 @@
           <li><a class="footer-link" href="#">Adnroid app</a></li>
         </ul>
         </nav>
-        <!--  -->
+        <!-- 3rd column -->
         <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
@@ -523,7 +531,7 @@
           <br><li><a class="footer-link" href="#">Careers</a></li>
         </ul>
         </nav>
-        <!--  -->
+        <!-- 4th colmn-->
         <nav class="nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
@@ -535,6 +543,10 @@
           </div>
       
       </footer>
+
+      <div class="">
+        
+      </div>
   </body>
 </html>
 
@@ -601,6 +613,7 @@ header {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 
 .test {
   width: 1000px;
@@ -887,6 +900,7 @@ GALLERY SECTION
 .gallery-item {
   overflow: hidden;
 }
+
 .gallery-item img {
   display: block;
   width: 100%;
@@ -917,8 +931,8 @@ GALLERY SECTION
   margin-bottom: 2.2rem;
   padding-top: 2rem;
 }
-section.section-meals {
-}
+
+
 a.btn.btn--full {
   margin-bottom: 2rem;
 }
@@ -926,6 +940,12 @@ a.btn.btn--full {
   font-size: 5.6rem;
   font-weight: 600;
   color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price--complete {
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #f3f0f0;
   margin-bottom: 1.6rem;
 }
 .plan-text {
@@ -939,13 +959,26 @@ a.btn.btn--full {
   margin-bottom: 4.8rem;
 }
 
+.plan-price--complete span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
 .plan-price span {
   font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
 .pricing-plan {
-  background-color: #fdf2e9;
+  background-color: #3b3636;
+  margin-bottom: 4.8rem;
+  border-radius: 11px;
+  width: 75%;
+  text-align: center;
+}
+.pricing-plan--starter {
+  background-color: #e0dad4;
   margin-bottom: 4.8rem;
   border-radius: 11px;
   width: 75%;
@@ -984,35 +1017,48 @@ FOOTER
   padding: 9.6rem;
   background-color: #111111;
  }
+
  .footer-heading{
 font-size: 1.8rem;
 font-weight: 500;
 margin-bottom: 3.2rem;
 margin-bottom:4rem ;
-
  }
+
+ .footer-nav p{
+ 
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+gap: 2rem;
+   }
+   
+
  .footer nav{
   list-style: none;
   display: flex;
   flex-direction: column;
 gap: 2.4rem;
  }
+
  .footer-link{
   gap: 2.4rem;
  }
+ 
  .footer-link:link,
  .footer-link:visited{
 text-decoration: none;
 font-size: 1.6rem;
 color: #767676;
 transition: all 0.3s;
-
  }
 
  .footer-link:hover,
  .footer-link:active{
 color: #f5f1f1;
  }
+
 .contacts{
 gap: 2.4rem;
 text-decoration: none;
@@ -1036,6 +1082,13 @@ transition: all 0.3s;
  overflow: hidden;
   background-color: white;
 }
+.copyright{
+  padding-top: 1rem;
+  list-style: none;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
 ______________________________________________________________________________________________________________________________________________________________
 GENERAL.CSS
 _______________________________________________________________________________________________________________________________________________________________
@@ -1052,12 +1105,15 @@ font-size:
   html {
     /* font-size: 10px; */
     font-size: 62.5%;
+    /* Scroll Behaviour */
+    scroll-behavior: smooth;
   }
   body {
     font-family: "rubik";
     line-height: 1;
     font-weight: 400;
     color: #555;
+    
   }
   /* 
   *********************************************
@@ -1123,6 +1179,7 @@ margin-bottom: 3.2rem;
     font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
   color: #cf711f;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px; 
@@ -1233,6 +1290,15 @@ margin-bottom: 3.2rem;
   .list-pricing{
     list-style: none;
     display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-left: 4.6rem;
+  }
+
+  .list-pricing--complete{
+    list-style: none;
+    display: flex;
+    color: #fdf2e9;
   flex-direction: column;
   gap: 1.6rem;
   padding-left: 4.6rem;

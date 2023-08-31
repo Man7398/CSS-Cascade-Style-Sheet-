@@ -69,7 +69,7 @@ ________________________________________________________________________________
   }
 
   80% {
-    /* move to the right and comeback */
+    /* move to the right and come back */
     transform: translate(-20px);
   }
 

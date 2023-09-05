@@ -17,15 +17,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo-box">
-        <img src="img/logo-white.png" alt="logo" class="logo" />
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="logo" class="header__logo" />
       </div>
-      <div class="text-box">
+      <div class="header__text-box">
         <h1 class="heading-primary">
-          <span class="heading-primary-main">outdoors</span>
-          <span class="heading-primary-sub">is where life happen</span>
+          <span class="heading-primary--main">outdoors</span>
+          <span class="heading-primary--sub">is where life happen</span>
         </h1>
-        <a href="#" class="btn btn-white">Discover our tours</a>
+        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
   </body>
@@ -45,10 +45,16 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  /* font-size:10px; */
+  /* we use % for more perfect user view experience  */
+  font-size: 62.5%;
+  /* REM is = root size px */
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #777;
   padding: 38px;
@@ -67,14 +73,14 @@ body {
 
   border-bottom-right-radius:65% 50%; */
 }
-.logo-box {
+.header__logo-box {
   position: absolute;
-  top: 60px;
-  left: 60px;
+  top: 6rem;
+  left: 6rem;
 }
 
-.logo {
-  height: 35px;
+.header__logo {
+  height: 3.5rem;
 
 }
 
@@ -82,10 +88,10 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -93,11 +99,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation: moveinright 1s ease-out;
 
 }
@@ -113,11 +119,11 @@ body {
   */
 
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.74rem;
   animation: moveinleft 1s ease-in;
 }
 
@@ -125,7 +131,7 @@ body {
 @keyframes moveinright {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   /* 60%{
@@ -134,7 +140,7 @@ body {
     
     } */
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -146,12 +152,12 @@ body {
 @keyframes moveinleft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
     /* move to the right and comeback */
-    transform: translateX(-20px);
+    transform: translateX(-2rem);
   }
 
   100% {
@@ -165,26 +171,27 @@ body {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 20px;
-  font-size: 15px;
-  border-radius: 100px;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 10rem;
   transition:all in 2s;
   position: relative;
 }
 
 .btn:hover{
-  transform: translateY(-3px);
+  transform: translateY(-.3rem);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .btn:active{
-  transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(7, 7, 7, 0.2);
 }
-.btn-white{
-background-color: #4fbe0fb0;
+.btn--white{
+background-color: #55c57a;
 color: #0e0d0d;
 font-weight: 700;
+/* animation-fill-mode: backwards; */
 animation: moveupbottom 0.5s ease-in;
 }
 .btn::after{
@@ -192,7 +199,7 @@ animation: moveupbottom 0.5s ease-in;
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,8 +207,8 @@ animation: moveupbottom 0.5s ease-in;
 transition: all 0.2s;
 }
 
-.btn-white::after{
-  background-color: #e7e2e2;
+.btn--white::after{
+  background-color: #ebf5ee;
 }
 
 .btn:hover::after{
@@ -214,12 +221,12 @@ transition: all 0.2s;
 @keyframes moveupbottom {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10rem);
   }
 
   80% {
     /* move to the right and comeback */
-    transform: translateY(20px);
+    transform: translateY(2rem);
   }
 
   100% {

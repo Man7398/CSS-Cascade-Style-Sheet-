@@ -234,3 +234,202 @@ transition: all 0.2s;
     transform: translateY(0);
   }
 }
+_______________________________________________________________________________________________________________________________________
+SCSS
+____________________________________________________________________________________________________________________________________
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size:10px; */
+  /* we use % for more perfect user view experience  */
+  font-size: 62.5%;
+  /* REM is = root size px */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 38px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, #6fd57db9, #28b485c0),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /* clip-path: polygon(x y,x y, x y);  */
+  /* For Cut top right bottom corner */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* border: 4px #D5F5E3 solid;
+  
+    border-bottom-right-radius:65% 50%; */
+
+}
+
+ .header__logo-box {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+} 
+
+ .header__logo {
+  height: 3.5rem;
+} 
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 8rem;
+}
+
+ .header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+} 
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation: moveinright 1s ease-out;
+}
+
+/* right All of Animation In one Line
+    animation: name timing animation-function;
+    animation:moveinright 3s ease out;
+    */
+/* More Animation tricks 
+    animation-delay:3s
+    animation-iteration-count:3
+      animation-duration: 1s;
+    */
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.74rem;
+  animation: moveinleft 1s ease-in;
+}
+
+/* Adding Animation */
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  /* 60%{
+  
+      transform:translateX(rotate(120deg));
+      
+      } */
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    /* move to the right and comeback */
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 10rem;
+  transition: all in 2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(7, 7, 7, 0.2);
+}
+
+.btn--white {
+  background-color: #55c57a;
+  color: #0e0d0d;
+  font-weight: 700;
+  /* animation-fill-mode: backwards; */
+  animation: moveupbottom 0.5s ease-in;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+.btn--white::after {
+  background-color: #ebf5ee;
+}
+
+.btn:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+@keyframes moveupbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    /* move to the right and comeback */
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

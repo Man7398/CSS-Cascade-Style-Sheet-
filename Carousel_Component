@@ -14,7 +14,6 @@
         color: #495057;
         line-height: 1;
       }
-
       .carousel {
         background-color: #087f5b;
         width: 800px;

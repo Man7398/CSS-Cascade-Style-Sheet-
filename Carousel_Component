@@ -101,7 +101,6 @@
        justify-content: center;
        align-items: center;
        }
-
       .dot--fill {
       
         background-color: #087f5b;

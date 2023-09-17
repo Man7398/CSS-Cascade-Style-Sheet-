@@ -28,7 +28,6 @@
         /* align-items: center; */
         gap: 32px;
       }
-
       img {
      row-gap: 20px;
         height: 225px;

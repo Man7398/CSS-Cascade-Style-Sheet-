@@ -75,7 +75,6 @@
          /* In relation to PARENTE ELEMENT */
          left: 0;
         top: 50%;
-
         /* In relation to ELEMENT ITSELF */
         transform: translate(-50%, -50%);
       }

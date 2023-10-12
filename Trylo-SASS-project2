@@ -617,17 +617,10 @@ body {
 .recommend__friends {
   display: flex;
 }
-.recommend__photo {
-  box-sizing: content-box;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-.recommend__photo:not(:last-child) {
-  margin-right: -2rem;
-}
 
-  // Older browsers
-        background-image: url(../img/chevron-thin-right.svg);
-        background-size: cover;
+    &__item::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .7rem;
